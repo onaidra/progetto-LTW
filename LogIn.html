@@ -7,7 +7,8 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
+        <link rel="stylesheet" type="text/css" href="../Log In/LogIn.css">
+
 <nav class="navbar navbar-inverse navbar navbar-fixed-top">
         <div class="container-fluid">
           <div class="navbar-header">
@@ -21,7 +22,6 @@
           <div>
             <div class="collapse navbar-collapse" id="myNavbar">
               <ul class="nav navbar-nav">
-                <li><a href="../Home/Home.html">Home</a></li>
                 <li><a href="../About Us/AboutUs.html">About Us</a></li>
               </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -32,5 +32,25 @@
         </div>
       </nav>
 <body>
+    <div class="loginbox">
+      <img src="../images.png" class="avatar">
+          <h1>Login Here</h1>
+          <form>
+            <p>Username</p>
+            <input type="text" name="" class="text" placeholder="Enter Username">
+            <p>Password</p> 
+            <div id="wrapper">
+              <div class="form-group has-feedback">
+                  <input type="password" class="form-control " id="password" placeholder="Confirm password">
+                  <i class="glyphicon glyphicon-eye-open form-control-feedback" id="eye"></i>
+                  <script src="LogIn.js"></script>
+              </div>
+            </div> 
+            <input type="submit" name="" value="Login">
+            <a href="">Forgot Your Password?</a><br>
+            <a href="../Sign In/SignIn.html">Don't have any Account?</a>            
+          </form>
+    </div>
 </body>
+</head>
 </html>
