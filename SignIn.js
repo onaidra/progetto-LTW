@@ -1,17 +1,11 @@
-function myFunction() {
-    var x = document.getElementById("password");
-    if (x.type === "password") {
-        x.type = "text";
-    } else {
-        x.type = "password";
-    }
-}
+// toggle password visibility
+$("#eye").on("click", function() {
+  $(this).toggleClass("glyphicon-eye-close");
+    var type = $("#password").attr("type");
+  if (type == "text"){ 
+    $("#password").prop('type','password');}
+  else{ 
+    $("#password").prop('type','text'); }
+  });
 
-function myFunction2() {
-    var x = document.getElementById("password2");
-    if (x.type === "password") {
-        x.type = "text";
-    } else {
-        x.type = "password";
-    }
-}
+  
