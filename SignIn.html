@@ -1,55 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <title>Sign Up</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link href="Sign In.css" rel="stylesheet" type="text/css" />
+    <title>Sign Up</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="../Sign In/Sign In.css" rel="stylesheet" type="text/css" />
+    <script src="moduliSignIn.js">  </script>
 </head>
 <nav class="navbar navbar-inverse navbar navbar-fixed-top">
-        <div class="container-fluid">
-          <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>                        
-              </button>
-              <a class="navbar-brand" href="../Main/progetto.html">WishWeb</a>
-          </div>
-          <div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-              <ul class="nav navbar-nav">
-                <li><a href="../Home/Home.html">Home</a></li>
-                <li><a href="../About Us/AboutUs.html">About Us</a></li>
-              </ul>
-            <ul class="nav navbar-nav navbar-right">
-            <li><a href="../Log In/LogIn.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            </ul>
-            </div>
-          </div>
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" href="../Main/progetto.html">WishWeb</a>
         </div>
-      </nav>
-<body>
-    <body background="../gatto.jpg" link="blue"
-    vlink="red" alink="red">
-    <div class="page-container">
-            
-        <form action="#" method="POST">
-  <h1>Sign Up</h1>
-            <input type="text" name="name" class="Name" placeholder="Name">
-            <input type="text" name="email" class="Email" placeholder="Email">
-            <input type="password" class="Address" placeholder="Password" id="Password"><br><br>
-            <input type="checkbox" onclick="myFunction()">Show
-            <script src="../Sign In/SignIn.js"></script>
-            <input type="password" class="Address" placeholder="Confirm password" id="password2"><br><br>
-            <input type="checkbox" onclick="myFunction2()">Show
-            <script src="../Sign In/SignIn.js"></script>
-            <button type="submit" value="Add" name="submit">Submit</button>
-            
-        </form>
+        <div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+            <li><a href="../About Us/AboutUs.html">About Us</a></li>
+            </ul>
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="../Log In/LogIn.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+        </div>
+        </div>
     </div>
+</nav>
+<body>
+<body background="../gatto.jpg" link="blue"
+vlink="red" alink="red">
+<div class="page-container">
+    <form action="" method="post" name="registr" onSubmit="return validaForm();">
+    <h1>Sign Up</h1>
+        <input type="text" name="name" class="Name" placeholder="Username">
+        <input type="text" name="email" class="Email" placeholder="Email">
+        <div class = "page-container" id="wrapper">
+                <div class="form-group has-feedback">
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                    <i class="glyphicon glyphicon-eye-open form-control-feedback" id="eye"></i>
+                    <script src="SignIn.js"></script>
+                </div>
+        </div>
+        <div id="wrapper">
+            <div class="form-group has-feedback">
+                <input type="password" class="form-control" id="password2" placeholder="Confirm password">
+                <i class="glyphicon glyphicon-eye-open form-control-feedback" id="oye"></i>
+                <script src="SignIn2.js"></script>
+
+            </div>
+        </div>
+        <button type="submit" value="Add" name="submit">Submit</button>
+    </form>
+</div>
 </body>
 </html>
