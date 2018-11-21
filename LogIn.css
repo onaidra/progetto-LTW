@@ -1,15 +1,21 @@
 body{
     margin: 0;
     padding:0;
-    background:url(../gatto.jpg);
-    background-size: auto;
-    font-family: sans-serif;
+    background: url(image_sfondo_login.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size:cover;
+    font-family: sans-serif; 
 }
+:placeholder-shown:-moz-placeholder { color: rgba(99, 71, 51, 0.829); }
+:placeholder-shown:-ms-input-placeholder { color: rgba(99, 71, 51, 0.829); }
+:placeholder-shown::-webkit-input-placeholder { color: rgba(99, 71, 51, 0.829); }
+
 .loginbox{
     text-align: left;
     width: 320px;
-    height: 400px;
-    background: #000;
+    height: 370px;
+    background: rgba(214, 163, 114, 0.808);
     color: #fff;
     top: 50%;
     left: 50%;
@@ -61,7 +67,7 @@ h1{
     border: none;
     outline: none;
     height: 40px;
-    background:#fb2525;
+    background:url(legno.jpg);
     color:#fff;
     font-size: 18px;
     border-radius: 20px;
@@ -69,7 +75,8 @@ h1{
 
 .loginbox input[type="submit"]:hover {
     cursor: pointer;
-    background: #ffc107;
+    background:url(legno.jpg) ;
+    opacity: 0.7;
     color: #000;
 }
 
@@ -77,7 +84,7 @@ h1{
     text-decoration: none;
     font-size: 12px;
     line-height: 20px;
-    color: darkgrey;
+    color: rgba(99, 71, 51, 0.829);
 }
 
 .loginbox a:hover{
