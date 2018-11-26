@@ -92,36 +92,8 @@
     
 }
 
-/* Social Icons */
-
-.social-icons{
-    
-    margin: 0;
-    padding: 0;
-    font-size : 10px;
-}
-.social {
-    margin:7px 7px 7px 0px;
-    color:#232323;
-}
 
 
-#social-fb:hover {
-     color: #3B5998;
-     transition:all .25s;
- }
- #social-tw:hover {
-     color: #4099FF;
-     transition:all .25s;
- }
- #social-gp:hover {
-     color: #d34836;
-     transition:all .25s;
- }
- #social-em:hover {
-     color: #f39c12;
-     transition:all .25s;
- }
 
 
 /* Site Heading */
@@ -151,7 +123,7 @@
     background-size: cover;
     background-position: center center;
     color: #fff;
-    padding-top: 250px;
+    padding-top: 22%;
     padding-bottom:110px;
  }
  
@@ -264,4 +236,57 @@ i {
 
 #foto{
     left: 33%;
+}
+
+
+/*social*/
+#fb{
+    color:#3B5998;
+    
+  }
+
+#insta {
+    color:#3B5998;
+}
+
+#linkedin{
+    color: #3B5998;
+
+}
+#google-plus {
+    color:#3B5998;
+}
+
+.listing-block .list-inline {
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+}
+
+.listing-block .list-inline>li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.listing-block .list-inline>li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width:40px;
+    height:40px;
+    font-size: 20px;
+}
+
+.listing-block .list-inline a.icoFacebook:hover {
+    background-color: #3B5998;
+
+}
+
+.my_class:hover{
+    color: #3B5998;
 }
