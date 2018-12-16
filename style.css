@@ -22,5 +22,9 @@ body {
     font-family: cursive;
     font-style: inherit;
 }
-
-
+.foto{
+    margin-right:30px;
+}
+.foto1{
+    margin-left:30px;
+}

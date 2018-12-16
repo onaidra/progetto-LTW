@@ -1,7 +1,7 @@
 body {
     font-family:sans-serif;
     color:#fff;
-       background: url(background_signup.png) center center fixed;
+       background: url(background_signup.png) no-repeat center center fixed;
        -webkit-background-size: cover;
        -moz-background-size: cover;
        -o-background-size:cover;
@@ -147,4 +147,7 @@ body {
      #oye {
         margin: auto;
         padding-left: 17px;
+     }
+     .alert alert-success,alert-dismissible{
+         margin-top: 20%;
      }

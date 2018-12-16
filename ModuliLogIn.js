@@ -1,5 +1,5 @@
 function validaForm() {
-    if (document.registr.name.value=="") {
+    if (document.registr.username.value=="") {
     alert("Insert Username");
     return false;
     }

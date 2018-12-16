@@ -1,5 +1,5 @@
 function validaForm() {
-    if (document.registr.name.value=="") {
+    if (document.registr.username.value=="") {
     alert("Insert Username");
     return false;
     }
@@ -7,13 +7,16 @@ function validaForm() {
     alert("Insert e-mail");
     return false;
     }
-    if (document.registr.password.value=="") {
+    if (document.registr.password_1.value=="") {
     alert("Insert password");
     return false;
     }
-    if(document.registr.password2.value==""){
+    if(document.registr.password_2.value==""){
     alert("Insert Confirm Password");
     return false;
+    }
+    if(document.registr.password_2.value!=document.registr.password_1.value){
+        alert("the two password doesn't match");
     }
     return true;
 }
