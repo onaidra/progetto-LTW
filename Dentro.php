@@ -12,7 +12,6 @@ function fill_navbar($db)
   }
   return $output; 
 }
-
   //funzione per inserire elementi nel container centrale
 function fill_container($db)
 {
@@ -22,20 +21,17 @@ function fill_container($db)
   $result = mysqli_query($db, $sql);
   while ($row = mysqli_fetch_array($result)) {
     $output .= "<div class='row' style='border:1px solid black;'>";
-    $output .= "<h1 style='display:inline;'>nome:</h1> <h3 style='display:inline;'>" . $row['nome'] . "</h3><br>";
-    $output .= "<h1 style='display:inline;'>URL:</h1> <a style='display:inline; font-size:30px;' href=" . $row['URL'] . ">" . $row['URL'] . "</a><br>";
-    $output .= "<h1 style='display:inline;'>Prezzo:</h1> <h3 style='display:inline;'>" . $row['prezzo'] . "</h3><br>";
-    $output .= "<h1 style='display:inline;'>Lista:</h1> <h3 style='display:inline;'>" . $row['lista'] . "</h3>";
-    $output .= "<a style='display:inline;' id='rimuovere' style='font-size:15px;' href='delete.php?id=" . $row['URL'] . " '>Rimuovi</a><br>";
+    $output .= "<br><h3 style='display:inline;'>nome:</h3> <h3 style='display:inline;'>" . $row['nome'] . "</h3><br>";
+    $output .= "<h3 style='display:inline;'>URL:</h3> <a style='display:inline; font-size:15px; color:rgba(73, 85, 248, 0.897);' href=" . $row['URL'] . ">" . $row['URL'] . "</a><br>";
+    $output .= "<h3 style='display:inline;'>Prezzo:</h3> <h3 style='display:inline;'>" . $row['prezzo'] . "</h3><br>";
+    $output .= "<h3 style='display:inline;'>Lista:</h3> <h3 style='display:inline;'>" . $row['lista'] . "</h3>";
+    $output .= "<a style='display:inline;' id='rimuovere' class='stilebottone' style='font-size:15px;' href='delete.php?id=" . $row['URL'] . " '>Rimuovi</a><br>";
     $output .= "<br>";
     $output .= "</div>";
     $output .= "<hr class='my-4'>";
   }
   return $output;
 }
-
-
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -49,6 +45,7 @@ function fill_container($db)
   <script src="Dentro.js"></script>
   <script src="funzione.js"></script>
   <link href="Dentro.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
 </head>
 <nav class="navbar navbar-inverse navbar navbar-fixed-top">
   <div class="container-fluid">
@@ -94,7 +91,7 @@ function fill_container($db)
           <p>Insert list</p>
           <input type="text" placeholder="List" name="lista" id="lista"><br>
           <br>
-          <button type="submit" name="dentro_user">Add</button>
+          <button type="submit" name="dentro_user" style="background-color:grey">Add</button>
       </form>
     </div>
     <form action="" method="post">
@@ -104,29 +101,29 @@ function fill_container($db)
     
     <!-- BOTTONE ADD LIST-->
     
-    <button type="button" class="tablink" id="elem">New List</button>
+    <button type="button" class="tablink" id="elem" style="color:white">New List</button>
     <div class="collapsable" id="divlista" name="elementi" style="display:none;">
     <br> 
-    <p>Insert List name</p>
+    <p style="color:white">Insert List name</p>
     <input type="text"  placeholder ="list name" name="listname" id="listname"><br>
-    <button type="submit" name="new_list">Add</button>
+    <button type="submit" name="new_list" style="color:white" >Add</button>
     </div>
     </form>
     <!-- INSERISCO LE LISTE A SINISTRA -->
     
-    <select name="brand" id="brand">  
+    <select name="brand" id="brand" style="background-color:rgba(212, 144, 88, 0.445); color:white">    <!--comando per fare il menu a tendina-->
        <option value="" id="<?php echo ($_SESSION["username"]); ?>">Show All Lists</option>  
        <?php echo fill_navbar($db); ?>  
     </select>
     
     <!-- BOTTONE REMOVE LIST-->
     <form action="" method="post">
-    <button type="button" class="tablink" id="bottoneremove">Remove a List </button>
+    <button type="button" class="tablink" id="bottoneremove" style="color:white">Remove a List </button>
     <div class="collapsable" id="slideremove" name="rimuovi elementi" style="display:none;" >
     <br> 
-    <p>Insert List name</p>
+    <p style="color:white">Insert List name</p>
     <input type="text"  placeholder ="list name" name="removename" id="removename"><br>
-    <button type="submit" name="remove_list">Remove</button>
+    <button type="submit" name="remove_list" style="color:white" >Remove</button>
     </div>
     </form>
   </div>
@@ -139,4 +136,3 @@ function fill_container($db)
     </div>
 </body>
 </html>
-
