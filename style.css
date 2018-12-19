@@ -1,6 +1,6 @@
 body {
     background: url(tramonto.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
+    -webkit-background-size: cover;  /*servono per regolare lo sfondo e adattarlo alla finestra*/
     -moz-background-size: cover;
     -o-background-size:cover;
 }
@@ -19,8 +19,7 @@ body {
 
 .row {
     color:white;
-    font-family: cursive;
-    font-style: inherit;
+    font-family: "ABeeZee";
 }
 .foto{
     margin-right:30px;
@@ -28,3 +27,31 @@ body {
 .foto1{
     margin-left:30px;
 }
+/*bottone back to top*/
+#myBtn {
+    display: none; /*Nascosto di default */
+    position: fixed; /* posizione fissata*/
+    bottom: 10%; /* lo mette in fondo alla pagina*/
+    right: 2%; /* regola la distanza dal lato destro */
+    z-index: 99; 
+    border: none; 
+    background-color: rgba(201, 181, 152, 0.842); 
+    color: rgb(238, 235, 235); /*colore freccia*/
+    cursor: pointer; /* per farlo cambiare quando ci vado con il mouse*/
+    padding: 10px 16px; /*margine*/
+    font-size: 18px; 
+    border-radius: 35px;
+    line-height: 1.33;
+    width: 40px;
+    height: 40px;
+    
+  }
+  
+  #myBtn:hover {
+    background-color: rgba(155, 150, 150, 0.842); 
+  }
+
+
+  .glyphicon{
+      right: 60%;
+  }

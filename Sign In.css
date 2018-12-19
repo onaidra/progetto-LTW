@@ -1,10 +1,11 @@
 body {
     font-family:sans-serif;
     color:#fff;
-       background: url(background_signup.png) no-repeat center center fixed;
+       background: url(background_signup.png) center center fixed;
        -webkit-background-size: cover;
        -moz-background-size: cover;
        -o-background-size:cover;
+       font-family: 'ABeeZee';font-size: 19px;
     }
     
     .page-container {
@@ -29,7 +30,7 @@ body {
     width:270px;
     height:42px;
     margin-top:25px;
-    padding:0 15px;
+    padding:0 15px; 
     background:#2d2d2d;
     background:rgba(45,45,45,.15);
     -moz-border-radius: 6px;
@@ -148,6 +149,5 @@ body {
         margin: auto;
         padding-left: 17px;
      }
-     .alert alert-success,alert-dismissible{
-         margin-top: 20%;
-     }
+
+

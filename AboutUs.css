@@ -1,108 +1,10 @@
- /* CTA CSS */
- .cta-padding35 {
-    padding: 35px 0 35px;
-    background-color: #b40028;
-    color:#fff;
-}
-/* Buttons */
-.site-btn {
-    font-size: 14px;
-    padding: 13px 30px;
-    border-radius: 5px;
-    border: 1px solid #b40028 ;
-    min-width: 200px;
-    display: inline-block;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-    color: #b40028 ;
-    background-color:transparent;
-    transition: all .25s ease-in-out;
-    margin: 10px 0px 10px 0px;
-    
-}
-.site-btn:hover {
-    background: #b40028 ;
-    border: 1px solid #fff;
-    font-weight:700px;
-    
-    
-}
- 
-/* Footer */
-.footer {
-    position: relative;
-    background-color: #fff;
-    color: #707070;
-    padding: 55px 0 40px;
-}
-.footer h5 {
-    font-size: 18px;
-    font-weight: 700;
-    font-family: 'Open Sans', sans-serif;
-    color: #707070;
-    position: relative;
-    padding-bottom: 16px;
-}
-.footer h5:after {
-    content: '';
-    display: block;
-    margin: 5px 0 0;
-    width: 40%;
-    height: 1px;
-    background-color: #fff;
-}
-.footer ul {
-    list-style: none;
-    line-height: 2.2em;
-    padding-left:0px;
-}
-.footer ul a {
-    color:#707070;;
-}
-.footer ul a:hover {
-    color:#274abb;;
-    text-decoration:none;
-}
-/*footer bottom */
-.footer-bottom {
-    padding-top: 5px;
-    padding-bottom: 15px;
-    border-top: 1px solid rgba(0,0,0,0.09);
-    background: #fff;
-    
-}
-.copyright-text p {
-    color: #707070;
-    margin-top: 18px;
-    margin-bottom: 0;
-    font-size:12px;
-}
-
-
-.team-content {
-    padding: 0px 15px 15px 15px;
-}
-.border-team {
-    border-bottom:1px solid #e2e2e2;
-    margin-bottom:10px;
-}
-.team-img:hover {
-    background:#f5f5f5;
-    
-}
-
-
-
-
-
 /* Site Heading */
-.site-heading h3{
+.site-heading h3{   /*caratteristiche scritta Our Team*/
     font-size : 40px;
     margin-bottom: 15px;
     font-weight: 600;
 }
-.border {
+.border { 
     background: #e1e1e1;
     height: 1px;
     width: 25%;
@@ -111,15 +13,14 @@
     margin-bottom: 45px;
 }
 
-.paddingTB60 {
+.padding{    /*stacca il testo dall'immagin del soffione e dalla scritta our team*/
     position: center ;
     padding-top:60px;
     padding-bottom:60px;
 }
 
    .image-aboutus-banner {
-    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("image_banner_aboutUs.jpg");
-    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("image_banner_aboutUs.jpg"); /*quello prima della virgola serve per fare l'effetto oscurato dell'immagine*/
     background-size: cover;
     background-position: center center;
     color: #fff;
@@ -133,25 +34,19 @@
     text-transform: none;
     color:#fff;
 }
-.image-aboutus-para {
-    color:#fff;
-}
 
 
 /* font CSS */
 body {
-    font-family: 'Roboto';
     line-height: 24px;
     letter-spacing: 0.5px;
     font-weight: 400;
     font-style: normal;
     color: #494949;
-    font-size: 16px;
+    font-family: 'ABeeZee';
+    font-size: 18px;
 }
 
-a:hover {
-    color: #465cff;
-}
 
 h1 {
     font-size: 35px;
@@ -160,13 +55,7 @@ h1 {
     font-weight: 600;
     color: #000;
 }
-h2 {
-    font-size: 30px;
-    line-height: 40px;
-    letter-spacing: 0px;
-    font-weight: 600;
-    color: #000;
-}
+
 
 h3 {
     line-height: 26px;
@@ -176,35 +65,7 @@ h3 {
     font-style: normal;
     color: #000;
 }
- h4 { font-size: 19px; 
-     letter-spacing: 0px; 
-     font-weight: 600;
-     font-style: normal;
-     color: #000;
-}
 
-p {
-    font-weight: 400;
-    font-style: normal;
-    color: #494949;
-}
-
-
-a {
-    color: #494949;
-}
-
-.capital {
-    text-transform:uppercase;
-}
-
-
-i {
-    font-style: normal;
-    font-size: 42px;
-    text-align: center;
-    line-height: 64px;
-}
 
 #foto{
     left: 33%;
@@ -233,35 +94,6 @@ i {
     color:#3B5998;
 }
 
-.listing-block .list-inline {
-    padding-left: 0;
-    margin-left: -5px;
-    list-style: none;
-}
-
-.listing-block .list-inline>li {
-    display: inline-block;
-    padding-right: 5px;
-    padding-left: 5px;
-}
-
-.listing-block .list-inline>li a {
-    display: inline-block;
-    position: relative;
-    margin: 0 auto 0 auto;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    text-align: center;
-    width:40px;
-    height:40px;
-    font-size: 20px;
-}
-
-.listing-block .list-inline a.icoFacebook:hover {
-    background-color: #3B5998;
-
-}
 
 .my_class:hover{
     color: #3B5998;
