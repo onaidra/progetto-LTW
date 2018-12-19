@@ -1,0 +1,139 @@
+
+    .navbar-header .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+    body{
+        margin: 0;
+        padding:0;
+    }
+    .aperturabottone{
+        top: 90%;
+        left: 95%;
+        position: absolute;
+    }
+    .aperturabottone button{
+        background-color: transparent;
+        position: fixed;
+        width: 70px;
+        height: 70px;
+        padding: 10px 16px;
+        font-size: 24px;
+        line-height: 1.33;
+        border-radius: 35px;
+    }
+
+    .aperturabottone button:hover{
+        background-color: greenyellow;
+        font-size: 34px;
+        color:black;
+    }
+
+    .aperturabottone button:focus{
+        outline:0;
+    }
+    .aperturabottone button:active{
+        outline:0;
+    }
+
+    .elementi {
+        top: 7%;
+        left: 81.7%;
+        position: fixed;
+        background-color: black;
+        width: 18%;
+        height: 42%;
+        text-align: center;
+        border-radius: 20px;
+    }
+
+    .elementi input[type="text"]{ 
+        border-radius: 10px;
+    }
+
+    .container {
+        top:70px;
+        width: 60%;
+        position: relative;
+    }
+    #idpersona{
+        color: white;
+    }
+    .row{
+        padding:0;
+        
+        position: relative;
+        border-radius: 20px;
+        height: 160px;
+    }
+    /* Style the tab */
+    .tab {
+        float: left;
+        position: fixed;
+        border: 1px solid black;
+        background-color: #f1f1f1;
+        width: 19%;
+        height: 100%;
+    }
+  /* Style the buttons inside the tab */
+  .tab button  {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+  }  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current "tab button" class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+.row #rimuovere{
+    right: 8px;
+    bottom:0;
+    position: absolute;
+}
+
+.collapsable{
+    left: 30%;
+    float: left;
+    position: relative;
+}
+#brand {
+    overflow:hidden;
+    width:100%;
+    height:40px;
+    -moz-border-radius: 9px 9px 9px 9px;
+    -webkit-border-radius: 9px 9px 9px 9px;
+    border-radius: 9px 9px 9px 9px;
+    box-shadow: 1px 1px 11px #330033;
+    background-color: #f1f1f1 no-repeat scroll 319px center;
+ }
+#brand select {
+    border: 0;
+    color: #EEE;
+    background-color:inherit;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2px 10px;
+    width: 378px;
+    *width: 350px;
+    *background: #58B14C;
+    -webkit-appearance: none;
+ }
+
