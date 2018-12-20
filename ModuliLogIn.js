@@ -1,3 +1,5 @@
+
+// FUNZIONE PER CONTROLLO INSERIMENTO DATI
 function validaForm() {
     if (document.registr.username.value=="") {
     alert("Insert Username");

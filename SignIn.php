@@ -53,6 +53,7 @@
                             <script src="SignIn.js"></script>
                         </div>
                 </div>
+
                 <div id="wrapper">
                     <div class="form-group has-feedback">
                         <input type="password" class="form-control" id="password2" name="password_2" placeholder="Confirm password">
@@ -61,9 +62,39 @@
 
                     </div>
                 </div>
+        <!-- CONTAINER PER CAPS LOCK 2 -->
+        <div class="kontainer">
+          <div id="pesan" class="alert alert-warning mt-2">
+            <strong style="color:white">Caps lock On</strong>
+          </div>
+        </div>
                 <button type="submit" value="Add" name="reg_user">Submit</button>
             </form>
         </div>
     </form>
+    <script>
+    var caps= document.getElementById('password');
+    var pesan=document.getElementById('pesan');
+    caps.addEventListener('keyup',function(event){
+        if(event.getModifierState('CapsLock')){
+            pesan.style.display="block";
+        }
+        else{
+            pesan.style.display="none";
+        }
+    });
+    </script>
+        <script>
+    var caps= document.getElementById('password2');
+    var pesan=document.getElementById('pesan');
+    caps.addEventListener('keyup',function(event){
+        if(event.getModifierState('CapsLock')){
+            pesan.style.display="block";
+        }
+        else{
+            pesan.style.display="none";
+        }
+    });
+    </script>
 </body>
 </html>

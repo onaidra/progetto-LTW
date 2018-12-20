@@ -1,11 +1,10 @@
 body {
     font-family:sans-serif;
     color:#fff;
-       background: url(background_signup.png) center center fixed;
+       background: url(background_signup.png) no-repeat center center fixed;
        -webkit-background-size: cover;
        -moz-background-size: cover;
        -o-background-size:cover;
-       font-family: 'ABeeZee';font-size: 19px;
     }
     
     .page-container {
@@ -30,7 +29,7 @@ body {
     width:270px;
     height:42px;
     margin-top:25px;
-    padding:0 15px; 
+    padding:0 15px;
     background:#2d2d2d;
     background:rgba(45,45,45,.15);
     -moz-border-radius: 6px;
@@ -76,20 +75,20 @@ body {
     height:44px;
     margin-top:25px;
     padding:0;
-    background:url(legno\ copia.jpg);
+    background:url(../LogIn/legno.jpg);
     -moz-border-radius: 20px;
     -webkit-border-radius: 20px;
     border-radius: 20px;
-    border:1px solid url(legno\ copia.jpg);
+    border:1px solid url(../LogIn/legno.jpg);
     -moz-box-shadow:
-            0 15px 30px 0 url(legno\ copia.jpg) inset,
-            0 2px 7px 0 url(legno\ copia.jpg);
+            0 15px 30px 0 url(../LogIn/legno.jpg) inset,
+            0 2px 7px 0 url(../LogIn/legno.jpg);
     -webkit-box-shadow:
-            0 15px 30px 0 url(legno\ copia.jpg) inset,
-            0 2px 7px 0 url(legno\ copia.jpg);
+            0 15px 30px 0 url(../LogIn/legno.jpg) inset,
+            0 2px 7px 0 url(../LogIn/legno.jpg);
     box-shadow:
-            0 15px 30px 0 url(legno\ copia.jpg) inset,
-            0 2px 7px 0 url(legno\ copia.jpg);
+            0 15px 30px 0 url(../LogIn/legno.jpg) inset,
+            0 2px 7px 0 url(../LogIn/legno.jpg);
     font-family:'PT Sans', Helvetica, Arial, sans-serif;
     font-size:14px;
     font-weight:700;
@@ -134,7 +133,7 @@ body {
         cursor: pointer;
         pointer-events: all;
       }
-     /* Styles for CodePen Demo Only */
+     
      #wrapper {
        max-width: 500px;
        margin: auto;
@@ -149,5 +148,57 @@ body {
         margin: auto;
         padding-left: 17px;
      }
+     .alert{
+         display: none;
+     }
+     .kontainer {
+        background: transparent;
+        width: 300px;
+        left: 48%;
+        top:11%;
+        position: absolute;
+    }
+     #pesan{
+        background: transparent;
+        border:0;
+    }
 
-
+    
+/* CSS PER MODAL BOX PROVENIENTE DA SERVER */
+/* The Modal (background) */
+.modal {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }

@@ -52,7 +52,8 @@
         </div>
       </nav>
 <body>
-    <form method="post" action="login.php" name="registr"onSubmit="return validaForm();">
+    <!-- LOGIN BOX -->
+    <form method="post" action="login.php" name="registr"onSubmit="return validaForm();"> 
     <div class="loginbox">
       <img src="avatar_legno.png" class="avatar">
           <h1>Login Here</h1>
@@ -65,11 +66,30 @@
                   <i class="glyphicon glyphicon-eye-open form-control-feedback" id="eye"></i>
                   <script src="LogIn.js"></script>
               </div>
-            </div> 
+            </div>
+    <!-- CONTAINER PER CAPS LOCK -->
+
+        <div class="kontainer">
+          <div id="pesan" class="alert alert-warning mt-2">
+            <strong style="color:white">Caps lock On</strong>
+            </div>
+          </div>
             <input type="submit" name="login_user" value="Login">
             <a href="../SignIn/SignIn.php">Don't have any Account?</a>            
           </form>
     </div>
+    <script>
+    var caps= document.getElementById('password');
+    var pesan=document.getElementById('pesan');
+    caps.addEventListener('keyup',function(event){
+        if(event.getModifierState('CapsLock')){
+            pesan.style.display="block";
+        }
+        else{
+            pesan.style.display="none";
+        }
+    });
+      </script>
 </body>
 </head>
 </html>
